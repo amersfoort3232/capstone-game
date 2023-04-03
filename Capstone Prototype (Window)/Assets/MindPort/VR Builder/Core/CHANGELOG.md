@@ -1,6 +1,49 @@
 # Changelog - VR Builder
 
-**v2.6.0 (2022-12-01 - Current)**
+**v2.8.0 (2023/03/10)**
+
+*[Added]*
+- New variant of the *Snap Object* behavior that allows to snap any object with a given tag in a specified snap zone.
+- Added *Duplicate Chapter* button to the chapter list in the step inspector. It can be used to create a copy of the currently selected chapter.
+
+*[Changed]*
+- The *Snap Object by Reference* condition now supports leaving one object reference field empty. This way, the condition will complete either when the user snaps a specific object in any snap zone, or when any object is snapped in a specific snap zone. Note that manual unlocking of objects or snap zones may be required, and fast forwarding will not automatically snap anything if a field is empty.
+
+*[Fixed]*
+- Copy/paste should now work as expected.
+- Change the way the step inspector focuses when a step is selected. This should help with the step inspector disappearing on macOS.
+
+**v2.7.1 (2023-02-01)**
+
+*[Changed]*
+- Changed the way text-to-speech audio works: it is no longer possible to generate TTS audio at runtime. This will ensure a build works consistently regardless of which machine is running on, as audio for builds will always be synthesized and stored in advance. Missing/changed audio is automatically generated when creating the build. Buttons to manually generate/flush files have been added in Project Settings > VR Builder > Language.
+- Refactored the TTS system to make it easier to add new TTS providers modularly, without the need to edit VR Builder files.
+- Improvements to the drawer of the Play Audio/TTS behavior in the Step Inspector.
+- Removed support for Google (v1) and Watson TTS providers.
+- It is now possible to build a VR Builder project on WebGL. Note that WebGL does not support VR, but this can be useful for some advanced, custom use cases.
+
+*[Fixed]*
+- It is now possible to build for Android using IL2CPP with managed stripping set to "Minimal" - before, this had to be set to "Low" as a workaround.
+- Grouping many steps in step groups no longer breaks the process JSON.
+
+*[Known Issues]*
+- TTS might not work properly on WebGL builds.
+
+**v2.7.0 (2023-01-17)**
+
+*[Added]*
+- New "Step Group" node which can be used to group together a cluster of nodes and improve graph organization. Existing nodes can be grouped from the context menu, or an empty group can be created and populated. Caveats: currently the group node only has one input and one output. End Chapter nodes are not supported in step groups. Nested step groups are not recommended.
+
+*[Changed]*
+- Changed teleportation logic and updated rigs accordingly to improve reliability. Anchors and teleportation areas now need their Teleport Trigger to be set to "On Deactivated". This is taken care of automatically when autoconfiguring teleportation anchors, but already configured anchors/areas will not work as intended with the new rig and viceversa. Note that you will need to delete the rig and re-perform setup to create an up-to-date one in an existing scene.
+
+*[Fixed]*
+- Fixed process not loading correctly on some IL2CPP Android builds.
+- Fixed scene object reference to a child in a prefab becoming invalid when the prefab is edited.
+- Fixed process scene objects in additively loaded scene not registering.
+- Fixed process scene objects in additively loaded scene requesting a new unique name on load.
+
+**v2.6.0 (2022-12-01)**
 
 *[Added]*
 - New "End Chapter" node which can be used as an exit node and lets you specify which chapter will start next. This makes it possible to build non-linear processes where some chapters are skipped or you return back to previous ones!

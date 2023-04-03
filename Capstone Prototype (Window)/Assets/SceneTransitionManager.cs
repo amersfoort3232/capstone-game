@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class SceneTransitionManager : MonoBehaviour
 {
-    public int sceneIndex;
-
-
-    void OnTriggerEnter (Collider other) {
-        if(other.CompareTag("Player")) {
-            SceneManager.LoadScene(sceneIndex);
-        }
-    }
+    public string scenename;
+ 
+ void OnTriggerEnter(Collider other){
+  if(other.CompareTag("Player")){
+   SceneManager.LoadScene(scenename);
+  }
+ }
 }

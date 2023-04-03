@@ -16,6 +16,6 @@ MonoBehaviour:
   Language: En
   Voice: Male
   UseStreamingAssetFolder: 1
-  SaveAudioFilesToStreamingAssets: 0
+  SaveAudioFilesToStreamingAssets: 1
   StreamingAssetCacheDirectoryName: TextToSpeech
   Auth: 

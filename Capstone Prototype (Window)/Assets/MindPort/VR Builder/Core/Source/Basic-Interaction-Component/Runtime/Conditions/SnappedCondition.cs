@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Runtime.Serialization;
 using UnityEngine.Scripting;
 using VRBuilder.BasicInteraction.Properties;
@@ -19,7 +20,7 @@ namespace VRBuilder.BasicInteraction.Conditions
     [HelpLink("https://www.mindport.co/vr-builder/manual/default-conditions/snap-object")]
     public class SnappedCondition : Condition<SnappedCondition.EntityData>
     {
-        [DisplayName("Snap Object")]
+        [DisplayName("Snap Object (Ref)")]
         [DataContract(IsReference = true)]
         public class EntityData : IConditionData
         {
@@ -55,7 +56,19 @@ namespace VRBuilder.BasicInteraction.Conditions
 
             protected override bool CheckIfCompleted()
             {
-                return Data.Target.Value.IsSnapped && (Data.ZoneToSnapInto.Value == null || Data.ZoneToSnapInto.Value == Data.Target.Value.SnappedZone);
+                if(Data.Target.Value == null && Data.ZoneToSnapInto.Value == null)
+                {
+                    throw new NullReferenceException("Snapped condition is not configured.");
+                }
+
+                if (Data.Target.Value == null)
+                {
+                    return Data.ZoneToSnapInto.Value.SnappedObject != null;
+                }
+                else
+                {
+                    return Data.Target.Value.IsSnapped && (Data.ZoneToSnapInto.Value == null || Data.ZoneToSnapInto.Value == Data.Target.Value.SnappedZone);
+                }
             }
         }
 
@@ -67,6 +80,11 @@ namespace VRBuilder.BasicInteraction.Conditions
 
             public override void Complete()
             {
+                if (Data.ZoneToSnapInto.Value == null)
+                {
+                    return;
+                }
+
                 Data.Target.Value.FastForwardSnapInto(Data.ZoneToSnapInto.Value);
             }
         }
@@ -79,6 +97,11 @@ namespace VRBuilder.BasicInteraction.Conditions
 
             public override void Configure(IMode mode, Stage stage)
             {
+                if(Data.ZoneToSnapInto.Value == null)
+                {
+                    return;
+                }
+
                 Data.ZoneToSnapInto.Value.Configure(mode);
             }
         }
@@ -92,7 +115,7 @@ namespace VRBuilder.BasicInteraction.Conditions
         {
         }
 
-        public SnappedCondition(string target, string snapZone, string name = "Snap Object")
+        public SnappedCondition(string target, string snapZone, string name = "Snap Object (Ref)")
         {
             Data.Target = new ScenePropertyReference<ISnappableProperty>(target);
             Data.ZoneToSnapInto = new ScenePropertyReference<ISnapZoneProperty>(snapZone);

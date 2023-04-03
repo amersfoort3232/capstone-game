@@ -8,7 +8,7 @@
 1. [Quick Start](#quick-start)
     - [Demo Scene Overview](#demo-scene-overview)
     - [Demo Scene Hierarchy](#demo-scene-hierarchy)
-    - [Workflow Editor](#workflow-editor)
+    - [Process Editor](#process-editor)
         - [Chapters View](#chapters-view)
         - [Graph View](#graph-view)
         - [Step Nodes](#step-nodes)
@@ -51,7 +51,7 @@
 
 VR Builder helps you create interactive VR applications better and faster. By setting up a Unity scene for VR Builder, you will pair it with a VR Builder *process*. Through the VR Builder process, you can define a sequence of actions the user can take in the scene and the resulting consequences.
 
-You can easily edit a process without coding through VR Builder's Workflow Editor. The Workflow Editor is a node editor where the user can arrange and connect the *steps* of the process. Each step is a different node and can include any number of *behaviors*, which make things happen in the scene. Likewise, a step will have at least one *transition* leading to another step. Every transition can list several *conditions* which have to be completed for the transition to trigger. For example, step B can be reached only after the user has grabbed the object specified in step A.
+You can easily edit a process without coding through VR Builder's process editor. The process editor is a node editor where the user can arrange and connect the *steps* of the process. Each step is a different node and can include any number of *behaviors*, which make things happen in the scene. Likewise, a step will have at least one *transition* leading to another step. Every transition can list several *conditions* which have to be completed for the transition to trigger. For example, step B can be reached only after the user has grabbed the object specified in step A.
 
 Behaviors and conditions are the "building blocks" of VR Builder. Several of them are provided in the free version already. Additional behaviors and conditions are available in our paid add-ons. Since VR Builder is open source, you can always write your own behaviors and conditions as well.
 
@@ -152,11 +152,11 @@ The only requirement every VR Builder rig has, independent of the interaction sy
 
 It is also possible to add other `Process Scene Object`s on the rig in order to use hands, backpacks, toolbelts and so on in behaviors and conditions, depending on the use case.
 
-### Workflow Editor
+### Process Editor
 
-The Workflow Editor lets you design the  process of your VR application.You can open the Workflow Editor from `Tools > VR Builder > Open Workflow Editor` or `Window > VR Builder > Workflow Editor`. The workflow editor for the demo scene should look like this.
+The process editor lets you design the  process of your VR application. You can open the process editor from `Tools > VR Builder > Open Process Editor` or `Window > VR Builder > Process Editor`. The process editor for the demo scene should look like this.
 
-![Workflow editor](images/workflow-editor.png)
+![Process editor](images/workflow-editor.png)
 
 #### Chapters view
 On the left, there is a list of chapters. Every chapter is a separate section of the process. They are useful to separate a process in its logical steps and avoid too much clutter in a single graph. 
@@ -195,11 +195,38 @@ You can create a node by right clicking anywhere in the graph and selecting `New
 
 This is the default step node, the main building block for your process. By default, it is empty. This means that nothing will happen, and the execution will immediately proceed to the next node, if present. You will need to add behaviors and conditions to it in the `Step Inspector` in order to customize it and build your process logic.
 
+**Step Group**
+
+This node doesn't let you set conditions and behaviors, but instead can be expanded in a new node graph. It can be populated with other step nodes and act as a "sub-chapter" with some self contained logic. This can help keeping the process tidy.
+
+![Step group node](images/step-group-node.png)
+
+You can access the node's graph by clicking the `Expand` button or double clicking on the node itself. There are also context menu options for expanding the node or ungrouping it - that is, replacing it in the main graph with the logic it contains.
+
+This node only has one entry and one exit point. This means that after the contained logic has ended executing, the process will always continue executing from the exit transition of the group node.
+
+If you are in a step group graph, it will be indicated on the top left of the process editor.
+
+![Step group UI](images/node-group-hierarchy.png)
+
+You can click on a parent to return to it. For example, clicking on "Chapter 1" will get you back to the main chapter graph.
+
+You can also create a group by selecting a sequence of nodes, right clicking and selecting `Make group`. Since the step group node only has one input and one output, this works best when selecting linked nodes only. Edge cases are resolved as follows:
+- If there are two or more inbound connections in the group, all will lead to the group's input. The first valid node will be chosen as starting step for the group, while the others will have their connection severed.
+- All outgoing connections will be deleted, meaning that the process will continue from the output of the group node after the group has processed. This means that if the selected nodes lead to multiple other nodes, now they will all go through the group's output.
+- The step group output will be connected to the previous target of the first valid grouped node. Other external targets in grouped nodes are ignored, which means that when the group ends it will always go to the same following node.
+
+If you encounter one of these edge case, make sure to review your process logic after grouping, as it may have changed.
+
+    Note: There is no theoretical limit to nesting step groups within one another. However, due to how processes are currently stored, too many nested groups can result in an unreadable JSON file. Therefore, creating step groups within a step group is currently disabled. While there are ways to work around this (e.g. with copy/paste), it is not recommended to do so.
+
 **End Chapter**
 
 You can use this node as the last node on a sequence. It will end the current chapter and start a new specified chapter, which can be selected from a drop-down list. This is useful to move through the chapters in a non-linear fashion. Note that you are not required to use this node for linear processes, as a chapter will automatically end when an empty transition is reached. In that case, the process will simply proceed to the following chapter.
 
 ![End chapter node](images/end-chapter-node.png)
+
+    Note: It is not recommended to use this node inside a step group as it will behave slightly differently (the nodes following the step group will be fast-forwarded before ending the chapter). It is currently not possible to create this node inside a step group.
 
 ## Process Scene Objects
 
@@ -727,7 +754,7 @@ The Release Object condition is fulfilled when the `Object` is released by the u
 
 ------
 
-## Interaction/Snap Object
+## Interaction/Snap Object (by Reference)
 
 ### Description
 
@@ -735,7 +762,7 @@ The Snap Object condition is fulfilled when the `Object` is released into the `Z
 After the user releases the `Object`, this is moved to the snap zone's `SnapPoint`. To adjust this position, change the position of the SnapPoint child object of the `Zone to snap into` object.
 
 #### Snap Zone Generator
-For any snappable object you can generate a snap zone that can snap exactly this object and can be used as a `Zone to snap into`. To do so, navigate to the `Snappable Property` in Unity's Inspector and click on the button `Create Snap Zone`. 
+For any snappable object you can generate a snap zone that can snap exactly this object and can be used as a `Zone to snap into`. To do so, navigate to the `Snappable Property` in Unity's Inspector and click on the button `Create Snap Zone for this object`. 
 
 ![Snap Zone Generator](images/snapzonegenerator.png)
 
@@ -744,7 +771,52 @@ Instead of the automatic generation as described above, you can do those steps a
 
 #### Feed Forward for Snap Zones
 
-Snap zones are restricted to which objects can be snapped. This means every object can be valid (i.e. it can be snapped to this zone) or invalid (it can not be snapped to this zone) for a snap zone. In case you are moving a valid object into a zone, the snap zone color changes to ‘Validation Color’ (green), providing the user in VR with positive feedback. In case you are moving an invalid object into a zone, the snap zone color changes to ‘Invalid Color’ (red), giving the user the feedback that this is the wrong object for this zone. 
+Snap zones are restricted to which objects can be snapped. This means every object can be valid (i.e. it can be snapped to this zone) or invalid (it can not be snapped to this zone) for a snap zone. This is achieved with validation components on the snap zone, for example the `Is Object With Tag Validation` component or the `Is Process Scene Object Validation` component. You can use those to configure which specific objects or tags are accepted by the snap zone.
+In case you are moving a valid object into a zone, the snap zone color changes to ‘Validation Color’ (green), providing the user in VR with positive feedback. In case you are moving an invalid object into a zone, the snap zone color changes to ‘Invalid Color’ (red), giving the user the feedback that this is the wrong object for this zone. 
+You can modify the colors and materials to be used in the Snap Zones parameters and settings.
+
+#### Snap Zone Parameters and Settings
+To change the highlight color or validation hover material of a dedicated snap zone, navigate to the snap zone object in the Unity Inspector. You will find the Snap Zone Parameters and Settings in the script `Snap Zone`.
+
+![Snap Zone Parameters](images/snapzoneparameters.png)
+
+To change the colors and materials of all snap zones in the scene, select them in the VR Builder snap zone settings and press 'Apply settings in current scene'.
+
+![Snap Zone Settings](images/snapzonesettings.png)]
+
+The snap zone settings can be found in the project settings in tab `VR Builder > Settings > Snap Zones`.
+
+### Configuration
+
+- **Object**
+
+    The `Process Scene Object` to place (snap). The object needs to have the `Snappable Property` and a collider component configured. 
+
+- **Zone to snap into**
+
+    This field contains the `Process Scene Object` where the `Object` is required to be snapped. Make sure you added the `Snap Zone Property` component to the snap zone game object in the Unity Inspector. Besides, the object must have a collider component with the `Is Trigger` property *enabled*.
+    
+    ------
+
+## Interaction/Snap Object (by Tag)
+
+### Description
+
+This condition is fulfilled when any object with the specified tag is released into the `Zone to snap into`, which means the collider of the Object and collider of the Zone overlap. Adapt the collider size of the snap zone to increase or decrease the area where the user can release the `Object`. Increasing the collider size of the snap zone decreases the required *snap* precision and simplifies the user's interaction in VR. 
+After the user releases the object, this is moved to the snap zone's `SnapPoint`. To adjust this position, change the position of the SnapPoint child object of the `Zone to snap into` object.
+
+#### Snap Zone Generator
+For any snappable object you can generate a snap zone that can snap all objects with its same tags and can be used as a `Zone to snap into`. To do so, navigate to the `Snappable Property` in Unity's Inspector and click on the button `Create Snap Zone for objects with the same tags`. 
+
+![Snap Zone Generator](images/snapzonegenerator.png)
+
+#### Manual Snap Zone Creation
+Instead of the automatic generation as described above, you can do those steps also manually. Please refer to available documentation on the `XRSocketInteractor` from Unity or related sources. You can also make changes to the automatically created snap zone to adapt it to your needs. Please note that these changes might impact the process logic.
+
+#### Feed Forward for Snap Zones
+
+Snap zones are restricted to which objects can be snapped. This means every object can be valid (i.e. it can be snapped to this zone) or invalid (it can not be snapped to this zone) for a snap zone. This is achieved with validation components on the snap zone, for example the `Is Object With Tag Validation` component or the `Is Process Scene Object Validation` component. You can use those to configure which specific objects or tags are accepted by the snap zone.
+In case you are moving a valid object into a zone, the snap zone color changes to ‘Validation Color’ (green), providing the user in VR with positive feedback. In case you are moving an invalid object into a zone, the snap zone color changes to ‘Invalid Color’ (red), giving the user the feedback that this is the wrong object for this zone. 
 You can modify the colors and materials to be used in the Snap Zones parameters and settings.
 
 #### Snap Zone Parameters and Settings
@@ -838,7 +910,7 @@ This will configure the attached `Teleportation Anchor`. It will provide a visua
 
 We offer a constantly expanding list of [guides and tutorials](https://www.mindport.co/tutorials-unity-vr-development) on our website. We encourage you to check them out to improve your VR Builder skills.
 
-If this is your first time with VR Builder, you should start from the [Workflow Editor](https://www.mindport.co/vr-builder-learning-path/how-to-define-the-process-of-vr-applications-in-unity) and [Step Inspector](https://www.mindport.co/vr-builder-learning-path/how-to-define-steps-of-vr-applications-in-unity) tutorials, which explain the basics of working with VR Builder.
+If this is your first time with VR Builder, you should start from the [Process Editor](https://www.mindport.co/vr-builder-learning-path/how-to-define-the-process-of-vr-applications-in-unity) and [Step Inspector](https://www.mindport.co/vr-builder-learning-path/how-to-define-steps-of-vr-applications-in-unity) tutorials, which explain the basics of working with VR Builder.
 
 In addition,you might also want to check out the guides on how to build standalone VR Builder apps on the [Oculus Quest](https://www.mindport.co/vr-builder-learning-path/how-to-run-vr-builder-apps-on-oculus-quest-devices) or [Pico Neo 3](https://www.mindport.co/vr-builder-learning-path/how-to-run-vr-builder-apps-on-pico-neo-devices).
 
@@ -851,8 +923,6 @@ Lastly, there are some [step-by-step tutorials](https://www.mindport.co/vr-build
 VR Builder is based on the open source edition of the [Innoactive Creator](https://www.innoactive.io/creator). While Innoactive helps enterprises to scale VR training, we adopted this tool to provide value for smaller content creators looking to streamline their VR development processes. 
 
 Like Innoactive, we believe in the value of open source and will continue to support this approach together with them and the open source community.
-
-As VR Builder shares the same DNA as the Innoactive Creator, it can be useful check the [documentation for the Innoactive Creator](https://developers.innoactive.de/documentation/creator/v2.11.1/), the majority of which might be applicable to VR Builder as well.
 
 ## Contact and Support
 
