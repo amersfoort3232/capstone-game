@@ -1,6 +1,6 @@
 {
   "$id": "1",
-  "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper, VRBuilder.Core",
+  "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper, VRBuilder.Core",
   "Steps": {
     "$id": "2",
     "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
@@ -198,7 +198,7 @@
                       },
                       "TargetStep": {
                         "$id": "41",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 2,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -394,7 +394,7 @@
                       },
                       "TargetStep": {
                         "$id": "77",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 3,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -584,7 +584,7 @@
                       },
                       "TargetStep": {
                         "$id": "111",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 5,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1039,7 +1039,7 @@
                       },
                       "TargetStep": {
                         "$id": "194",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 4,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1255,7 +1255,7 @@
                       },
                       "TargetStep": {
                         "$id": "234",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 7,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1421,7 +1421,7 @@
                       },
                       "TargetStep": {
                         "$id": "264",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 8,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1528,7 +1528,7 @@
                       },
                       "TargetStep": {
                         "$id": "283",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 6,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1718,7 +1718,7 @@
                       },
                       "TargetStep": {
                         "$id": "317",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 9,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -1825,7 +1825,7 @@
                       },
                       "TargetStep": {
                         "$id": "336",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 10,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2012,7 +2012,7 @@
                       },
                       "TargetStep": {
                         "$id": "369",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 11,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2199,7 +2199,7 @@
                       },
                       "TargetStep": {
                         "$id": "402",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 8,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2385,7 +2385,7 @@
                       },
                       "TargetStep": {
                         "$id": "435",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 12,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2592,7 +2592,7 @@
                       },
                       "TargetStep": {
                         "$id": "472",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 13,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2690,7 +2690,7 @@
                       },
                       "TargetStep": {
                         "$id": "488",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 11,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -2998,7 +2998,7 @@
                       },
                       "TargetStep": {
                         "$id": "546",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 14,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -3386,7 +3386,7 @@
                       },
                       "TargetStep": {
                         "$id": "620",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 17,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -3497,7 +3497,7 @@
                       },
                       "TargetStep": {
                         "$id": "640",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 17,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -3664,7 +3664,7 @@
                       },
                       "TargetStep": {
                         "$id": "670",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 15,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -3836,7 +3836,7 @@
                       },
                       "TargetStep": {
                         "$id": "702",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 18,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -3947,7 +3947,7 @@
                       },
                       "TargetStep": {
                         "$id": "722",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 18,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -4276,7 +4276,7 @@
                       },
                       "TargetStep": {
                         "$id": "782",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 21,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -4682,7 +4682,7 @@
                       },
                       "TargetStep": {
                         "$id": "856",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 20,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -4877,7 +4877,7 @@
                       },
                       "TargetStep": {
                         "$id": "892",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 23,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -5145,7 +5145,7 @@
                       },
                       "TargetStep": {
                         "$id": "940",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 24,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -5391,7 +5391,7 @@
                       },
                       "TargetStep": {
                         "$id": "984",
-                        "$type": "VRBuilder.Core.Serialization.ImprovedNewtonsoftJsonProcessSerializer+ProcessWrapper+StepRef, VRBuilder.Core",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV3+ProcessWrapper+StepRef, VRBuilder.Core",
                         "PositionIndex": 22,
                         "LifeCycle": null,
                         "StepMetadata": null,
@@ -5924,5 +5924,5 @@
       "Metadata": null
     }
   },
-  "$serializerVersion": 2
+  "$serializerVersion": 3
 }
