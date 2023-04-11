@@ -15,12 +15,12 @@ F:/capstone-game/Capstone Prototype (Window)
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63100
+54190
 Successfully changed project path to: F:/capstone-game/Capstone Prototype (Window)
 F:/capstone-game/Capstone Prototype (Window)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 3194.44 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 43.93 ms.
+Refreshing native plugins compatible for Editor in 139.81 ms, found 20 plugins.
+Preloading 2 native plugins for Editor in 1.65 ms.
 Initialize engine version: 2020.3.43f1 (75bff06b76bf)
 [Subsystems] Discovering subsystems at path D:/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path F:/capstone-game/Capstone Prototype (Window)/Assets
@@ -30,55 +30,55 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
     Vendor:   
     VRAM:     5980 MB
-    Driver:   31.0.15.3118
+    Driver:   31.0.15.3141
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = 'D:/2020.3.43f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.311608 seconds.
+Registered in 0.001125 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 126.49 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 121.76 ms, found 20 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.500 seconds
+- Completed reload, in  0.595 seconds
 Domain Reload Profiling:
-	ReloadAssembly (7500ms)
-		BeginReloadAssembly (4962ms)
+	ReloadAssembly (595ms)
+		BeginReloadAssembly (56ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1438ms)
-			LoadAssemblies (4969ms)
+		EndReloadAssembly (474ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (863ms)
+			SetupTypeCache (128ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (299ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (224ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (127ms)
+				RefreshPlugins (122ms)
 				BeforeProcessingInitializeOnLoad (8ms)
-				ProcessInitializeOnLoadAttributes (108ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 2.650667 seconds.
+Registered in 0.008778 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 129.69 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 123.79 ms, found 20 plugins.
+Preloading 2 native plugins for Editor in 0.06 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -99,29 +99,29 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in 14.012 seconds
+- Completed reload, in  2.483 seconds
 Domain Reload Profiling:
-	ReloadAssembly (14017ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (2484ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (13814ms)
-			LoadAssemblies (9145ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (2303ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1347ms)
+			SetupTypeCache (360ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (2997ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (1535ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (130ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (1819ms)
-				ProcessInitializeOnLoadMethodAttributes (894ms)
+				RefreshPlugins (124ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (1238ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -130,15 +130,15 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
-Refreshing native plugins compatible for Editor in 2.26 ms, found 20 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.16 ms, found 20 plugins.
 Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 4953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 222.0 MB.
-System memory in use after: 222.3 MB.
+Unloading 4981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 222.3 MB.
+System memory in use after: 222.7 MB.
 
-Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 5373.
-Total: 17.588800 ms (FindLiveObjects: 0.548500 ms CreateObjectMapping: 0.147600 ms MarkObjects: 16.734000 ms  DeleteObjects: 0.156800 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 5401.
+Total: 15.582900 ms (FindLiveObjects: 0.465000 ms CreateObjectMapping: 0.139800 ms MarkObjects: 14.799800 ms  DeleteObjects: 0.177200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -152,354 +152,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/ActionBasedController.cs
-  artifactKey: Guid(caff514de9b15ad48ab85dcff5508221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/ActionBasedController.cs using Guid(caff514de9b15ad48ab85dcff5508221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e1e0fea0f1d986803857f497e0d47c') in 0.098918 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 168.236170 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b6aaa21f21348e6d54fa3363ad1850') in 0.022522 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010249 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.99 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-VRBuilder.Core.Runtime.Utils.SettingsObject`1<VRBuilder.Core.Utils.Logging.LifeCycleLoggingConfig>:Load () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Utils/SettingsObject.cs:54)
-VRBuilder.Core.Runtime.Utils.SettingsObject`1<VRBuilder.Core.Utils.Logging.LifeCycleLoggingConfig>:get_Instance () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Utils/SettingsObject.cs:34)
-VRBuilder.Core.Behaviors.Behavior`1<VRBuilder.Core.Behaviors.PlayAudioBehavior/EntityData>:.ctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Behaviors/Behavior.cs:27)
-VRBuilder.Core.Behaviors.PlayAudioBehavior:.ctor (VRBuilder.Core.Audio.IAudioData,VRBuilder.Core.Behaviors.BehaviorExecutionStages,UnityEngine.AudioSource,string) (at Assets/MindPort/VR Builder/Core/Source/Basic-Conditions-And-Behaviors/Runtime/Behaviors/PlayAudioBehavior.cs:127)
-VRBuilder.Core.Behaviors.PlayAudioBehavior:.ctor (VRBuilder.Core.Audio.IAudioData,VRBuilder.Core.Behaviors.BehaviorExecutionStages,bool,UnityEngine.AudioSource,string) (at Assets/MindPort/VR Builder/Core/Source/Basic-Conditions-And-Behaviors/Runtime/Behaviors/PlayAudioBehavior.cs:136)
-VRBuilder.Editor.TextToSpeech.UI.Behaviors.TextToSpeechMenuItem:GetNewItem () (at Assets/MindPort/VR Builder/Core/Source/TextToSpeech-Component/Editor/MenuItems/TextToSpeechMenuItem.cs:16)
-VRBuilder.Editor.UI.StepInspector.Menu.MenuItem`1<VRBuilder.Core.Behaviors.IBehavior>:GetItemType () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/UI/StepInspector/Menu/MenuItem.cs:33)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:ShouldBeEnabled (System.Type) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:245)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:UpdateWithAllBehaviorsAndConditionsInProject () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:224)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:.ctor (System.Collections.Generic.IDictionary`2<string, bool>,System.Collections.Generic.IDictionary`2<string, bool>) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:49)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:.ctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:40)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:Load () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:179)
-VRBuilder.Editor.Configuration.EditorConfigurator:LoadAllowedMenuItems () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:74)
-VRBuilder.Editor.Configuration.EditorConfigurator:Init () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:63)
-VRBuilder.Editor.Configuration.EditorConfigurator:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:32)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessStreamingAssetsSubdirectory (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:144)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessAssetDirectory (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:139)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessAssetPath (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:32)
-VRBuilder.Editor.ProcessAssetUtils:DoesProcessAssetExist (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:131)
-VRBuilder.Editor.ProcessAssetManager:Load (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetManager.cs:136)
-VRBuilder.Editor.GraphViewEditingStrategy:HandleCurrentProcessChanged (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GraphViewEditingStrategy.cs:99)
-VRBuilder.Editor.GlobalEditorHandler:SetCurrentProcess (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GlobalEditorHandler.cs:110)
-VRBuilder.Editor.GlobalEditorHandler:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GlobalEditorHandler.cs:30)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/MindPort/VR Builder/Core/Source/TextToSpeech-Component/Editor/MenuItems/TextToSpeechMenuItem.cs line 16]
-
-System.TypeInitializationException: The type initializer for 'VRBuilder.Editor.Configuration.EditorConfigurator' threw an exception. ---> UnityEngine.UnityException: Creating asset at path Assets/MindPort/VR Builder/Resources/LifeCycleLoggingConfig.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].Load () [0x00040] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:54 
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].get_Instance () [0x0002e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:34 
-  at VRBuilder.Core.Behaviors.Behavior`1[TData]..ctor () [0x00006] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Behaviors\Behavior.cs:27 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:127 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, System.Boolean isBlocking, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:136 
-  at VRBuilder.Editor.TextToSpeech.UI.Behaviors.TextToSpeechMenuItem.GetNewItem () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\TextToSpeech-Component\Editor\MenuItems\TextToSpeechMenuItem.cs:16 
-  at VRBuilder.Editor.UI.StepInspector.Menu.MenuItem`1[T].GetItemType () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\UI\StepInspector\Menu\MenuItem.cs:33 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.ShouldBeEnabled (System.Type type) [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:245 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.UpdateWithAllBehaviorsAndConditionsInProject () [0x0002f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:224 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor (System.Collections.Generic.IDictionary`2[TKey,TValue] behaviors, System.Collections.Generic.IDictionary`2[TKey,TValue] serializedConditions) [0x00014] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:49 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:40 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.Load () [0x0004e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:179 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.LoadAllowedMenuItems () [0x00022] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:74 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.Init () [0x000c8] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:63 
-  at VRBuilder.Editor.Configuration.EditorConfigurator..cctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:32 
-   --- End of inner exception stack trace ---
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessStreamingAssetsSubdirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:144 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetDirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:139 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetPath (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:32 
-  at VRBuilder.Editor.ProcessAssetUtils.DoesProcessAssetExist (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:131 
-  at VRBuilder.Editor.ProcessAssetManager.Load (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetManager.cs:136 
-  at VRBuilder.Editor.GraphViewEditingStrategy.HandleCurrentProcessChanged (System.String processName) [0x0001e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GraphViewEditingStrategy.cs:99 
-  at VRBuilder.Editor.GlobalEditorHandler.SetCurrentProcess (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:110 
-  at VRBuilder.Editor.GlobalEditorHandler..cctor () [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:30 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-VRBuilder.Editor.Configuration.LoggingConfigCreationTrigger:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/LoggingConfigCreationTrigger.cs:30)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/LoggingConfigCreationTrigger.cs line 30]
-
-UnityEngine.UnityException: Creating asset at path Assets/MindPort/VR Builder/Resources/LifeCycleLoggingConfig.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at VRBuilder.Editor.Configuration.LoggingConfigCreationTrigger..cctor () [0x0002e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\LoggingConfigCreationTrigger.cs:30 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in F:\capstone-game\Capstone Prototype (Window)\Library\PackageCache\com.unity.xr.oculus@1.13.1\Runtime\OculusLoader.cs:265 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in F:\capstone-game\Capstone Prototype (Window)\Library\PackageCache\com.unity.xr.oculus@1.13.1\Runtime\OculusLoader.cs:250 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <6a4b923691b54d0eb965a9ed2a807ce9>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.822 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1823ms)
-		BeginReloadAssembly (178ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1587ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (868ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (713ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (1ms)
-Platform modules already initialized, skipping
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.11 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 4768 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 208.6 MB.
-System memory in use after: 208.8 MB.
-
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 5379.
-Total: 13.902700 ms (FindLiveObjects: 0.437800 ms CreateObjectMapping: 0.145300 ms MarkObjects: 13.259500 ms  DeleteObjects: 0.058600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009825 seconds.
-Begin MonoManager ReloadAssembly
-UnityException: Creating asset at path Assets/MindPort/VR Builder/Resources/LifeCycleLoggingConfig.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].Load () [0x00040] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:54 
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].get_Instance () [0x0002e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:34 
-  at VRBuilder.Core.Behaviors.Behavior`1[TData]..ctor () [0x00006] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Behaviors\Behavior.cs:27 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:127 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, System.Boolean isBlocking, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:136 
-  at VRBuilder.Editor.TextToSpeech.UI.Behaviors.TextToSpeechMenuItem.GetNewItem () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\TextToSpeech-Component\Editor\MenuItems\TextToSpeechMenuItem.cs:16 
-  at VRBuilder.Editor.UI.StepInspector.Menu.MenuItem`1[T].GetItemType () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\UI\StepInspector\Menu\MenuItem.cs:33 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.ShouldBeEnabled (System.Type type) [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:245 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.UpdateWithAllBehaviorsAndConditionsInProject () [0x0002f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:224 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor (System.Collections.Generic.IDictionary`2[TKey,TValue] behaviors, System.Collections.Generic.IDictionary`2[TKey,TValue] serializedConditions) [0x00014] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:49 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:40 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.Load () [0x0004e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:179 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.LoadAllowedMenuItems () [0x00022] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:74 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.Init () [0x000c8] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:63 
-  at VRBuilder.Editor.Configuration.EditorConfigurator..cctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:32 
-Rethrow as TypeInitializationException: The type initializer for 'VRBuilder.Editor.Configuration.EditorConfigurator' threw an exception.
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessStreamingAssetsSubdirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:144 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetDirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:139 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetPath (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:32 
-  at VRBuilder.Editor.ProcessAssetUtils.DoesProcessAssetExist (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:131 
-  at VRBuilder.Editor.ProcessAssetManager.Load (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetManager.cs:136 
-  at VRBuilder.Editor.GraphViewEditingStrategy.HandleCurrentProcessChanged (System.String processName) [0x0001e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GraphViewEditingStrategy.cs:99 
-  at VRBuilder.Editor.GlobalEditorHandler.SetCurrentProcess (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:110 
-  at VRBuilder.Editor.GlobalEditorHandler..cctor () [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:30 
-Rethrow as TypeInitializationException: The type initializer for 'VRBuilder.Editor.GlobalEditorHandler' threw an exception.
-  at VRBuilder.Editor.AssemblyUnloadDetector.OnBeforeAssemblyReload () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\AssemblyUnloadDetector.cs:24 
-  at (wrapper delegate-invoke) <Module>.invoke_void()
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x0000d] in <6a4b923691b54d0eb965a9ed2a807ce9>:0 
-
-(Filename: Assets/MindPort/VR Builder/Core/Source/TextToSpeech-Component/Editor/MenuItems/TextToSpeechMenuItem.cs Line: 16)
-
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.15 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-VRBuilder.Core.Runtime.Utils.SettingsObject`1<VRBuilder.Core.Utils.Logging.LifeCycleLoggingConfig>:Load () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Utils/SettingsObject.cs:54)
-VRBuilder.Core.Runtime.Utils.SettingsObject`1<VRBuilder.Core.Utils.Logging.LifeCycleLoggingConfig>:get_Instance () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Utils/SettingsObject.cs:34)
-VRBuilder.Core.Behaviors.Behavior`1<VRBuilder.Core.Behaviors.PlayAudioBehavior/EntityData>:.ctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Runtime/Behaviors/Behavior.cs:27)
-VRBuilder.Core.Behaviors.PlayAudioBehavior:.ctor (VRBuilder.Core.Audio.IAudioData,VRBuilder.Core.Behaviors.BehaviorExecutionStages,UnityEngine.AudioSource,string) (at Assets/MindPort/VR Builder/Core/Source/Basic-Conditions-And-Behaviors/Runtime/Behaviors/PlayAudioBehavior.cs:127)
-VRBuilder.Core.Behaviors.PlayAudioBehavior:.ctor (VRBuilder.Core.Audio.IAudioData,VRBuilder.Core.Behaviors.BehaviorExecutionStages,bool,UnityEngine.AudioSource,string) (at Assets/MindPort/VR Builder/Core/Source/Basic-Conditions-And-Behaviors/Runtime/Behaviors/PlayAudioBehavior.cs:136)
-VRBuilder.Editor.TextToSpeech.UI.Behaviors.TextToSpeechMenuItem:GetNewItem () (at Assets/MindPort/VR Builder/Core/Source/TextToSpeech-Component/Editor/MenuItems/TextToSpeechMenuItem.cs:16)
-VRBuilder.Editor.UI.StepInspector.Menu.MenuItem`1<VRBuilder.Core.Behaviors.IBehavior>:GetItemType () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/UI/StepInspector/Menu/MenuItem.cs:33)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:ShouldBeEnabled (System.Type) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:245)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:UpdateWithAllBehaviorsAndConditionsInProject () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:224)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:.ctor (System.Collections.Generic.IDictionary`2<string, bool>,System.Collections.Generic.IDictionary`2<string, bool>) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:49)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:.ctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:40)
-VRBuilder.Editor.Configuration.AllowedMenuItemsSettings:Load () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/AllowedMenuItemsSettings.cs:179)
-VRBuilder.Editor.Configuration.EditorConfigurator:LoadAllowedMenuItems () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:74)
-VRBuilder.Editor.Configuration.EditorConfigurator:Init () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:63)
-VRBuilder.Editor.Configuration.EditorConfigurator:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/EditorConfigurator.cs:32)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessStreamingAssetsSubdirectory (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:144)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessAssetDirectory (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:139)
-VRBuilder.Editor.ProcessAssetUtils:GetProcessAssetPath (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:32)
-VRBuilder.Editor.ProcessAssetUtils:DoesProcessAssetExist (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetUtils.cs:131)
-VRBuilder.Editor.ProcessAssetManager:Load (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/ProcessAssets/ProcessAssetManager.cs:136)
-VRBuilder.Editor.GraphViewEditingStrategy:HandleCurrentProcessChanged (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GraphViewEditingStrategy.cs:99)
-VRBuilder.Editor.GlobalEditorHandler:SetCurrentProcess (string) (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GlobalEditorHandler.cs:110)
-VRBuilder.Editor.GlobalEditorHandler:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/GlobalEditorHandler.cs:30)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/MindPort/VR Builder/Core/Source/TextToSpeech-Component/Editor/MenuItems/TextToSpeechMenuItem.cs line 16]
-
-System.TypeInitializationException: The type initializer for 'VRBuilder.Editor.Configuration.EditorConfigurator' threw an exception. ---> UnityEngine.UnityException: Creating asset at path Assets/MindPort/VR Builder/Resources/LifeCycleLoggingConfig.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].Load () [0x00040] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:54 
-  at VRBuilder.Core.Runtime.Utils.SettingsObject`1[T].get_Instance () [0x0002e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Utils\SettingsObject.cs:34 
-  at VRBuilder.Core.Behaviors.Behavior`1[TData]..ctor () [0x00006] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Runtime\Behaviors\Behavior.cs:27 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:127 
-  at VRBuilder.Core.Behaviors.PlayAudioBehavior..ctor (VRBuilder.Core.Audio.IAudioData audioData, VRBuilder.Core.Behaviors.BehaviorExecutionStages executionStages, System.Boolean isBlocking, UnityEngine.AudioSource audioPlayer, System.String name) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Basic-Conditions-And-Behaviors\Runtime\Behaviors\PlayAudioBehavior.cs:136 
-  at VRBuilder.Editor.TextToSpeech.UI.Behaviors.TextToSpeechMenuItem.GetNewItem () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\TextToSpeech-Component\Editor\MenuItems\TextToSpeechMenuItem.cs:16 
-  at VRBuilder.Editor.UI.StepInspector.Menu.MenuItem`1[T].GetItemType () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\UI\StepInspector\Menu\MenuItem.cs:33 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.ShouldBeEnabled (System.Type type) [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:245 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.UpdateWithAllBehaviorsAndConditionsInProject () [0x0002f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:224 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor (System.Collections.Generic.IDictionary`2[TKey,TValue] behaviors, System.Collections.Generic.IDictionary`2[TKey,TValue] serializedConditions) [0x00014] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:49 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings..ctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:40 
-  at VRBuilder.Editor.Configuration.AllowedMenuItemsSettings.Load () [0x0004e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\AllowedMenuItemsSettings.cs:179 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.LoadAllowedMenuItems () [0x00022] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:74 
-  at VRBuilder.Editor.Configuration.EditorConfigurator.Init () [0x000c8] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:63 
-  at VRBuilder.Editor.Configuration.EditorConfigurator..cctor () [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\EditorConfigurator.cs:32 
-   --- End of inner exception stack trace ---
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessStreamingAssetsSubdirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:144 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetDirectory (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:139 
-  at VRBuilder.Editor.ProcessAssetUtils.GetProcessAssetPath (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:32 
-  at VRBuilder.Editor.ProcessAssetUtils.DoesProcessAssetExist (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetUtils.cs:131 
-  at VRBuilder.Editor.ProcessAssetManager.Load (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\ProcessAssets\ProcessAssetManager.cs:136 
-  at VRBuilder.Editor.GraphViewEditingStrategy.HandleCurrentProcessChanged (System.String processName) [0x0001e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GraphViewEditingStrategy.cs:99 
-  at VRBuilder.Editor.GlobalEditorHandler.SetCurrentProcess (System.String processName) [0x00000] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:110 
-  at VRBuilder.Editor.GlobalEditorHandler..cctor () [0x0000f] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\GlobalEditorHandler.cs:30 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-VRBuilder.Editor.Configuration.LoggingConfigCreationTrigger:.cctor () (at Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/LoggingConfigCreationTrigger.cs:30)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/MindPort/VR Builder/Core/Source/Core/Editor/Configuration/LoggingConfigCreationTrigger.cs line 30]
-
-UnityEngine.UnityException: Creating asset at path Assets/MindPort/VR Builder/Resources/LifeCycleLoggingConfig.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at VRBuilder.Editor.Configuration.LoggingConfigCreationTrigger..cctor () [0x0002e] in F:\capstone-game\Capstone Prototype (Window)\Assets\MindPort\VR Builder\Core\Source\Core\Editor\Configuration\LoggingConfigCreationTrigger.cs:30 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in F:\capstone-game\Capstone Prototype (Window)\Library\PackageCache\com.unity.xr.oculus@1.13.1\Runtime\OculusLoader.cs:265 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in F:\capstone-game\Capstone Prototype (Window)\Library\PackageCache\com.unity.xr.oculus@1.13.1\Runtime\OculusLoader.cs:250 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <6a4b923691b54d0eb965a9ed2a807ce9>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.776 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1777ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1598ms)
-			LoadAssemblies (103ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (376ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (853ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (115ms)
-				ProcessInitializeOnLoadAttributes (705ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (1ms)
-Platform modules already initialized, skipping
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.02 ms, found 20 plugins.
-Preloading 2 native plugins for Editor in 0.07 ms.
-Unloading 4769 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 208.7 MB.
-System memory in use after: 209.0 MB.
-
-Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 5385.
-Total: 14.240400 ms (FindLiveObjects: 0.562500 ms CreateObjectMapping: 0.327300 ms MarkObjects: 13.287600 ms  DeleteObjects: 0.061700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 420.046523 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2570dd50b2d2d6277acb0c831a9e472') in 0.041651 seconds 
+  path: Assets/Scenes/Home.unity
+  artifactKey: Guid(f5b90ca3b421f2342bd93009907c4829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Home.unity using Guid(f5b90ca3b421f2342bd93009907c4829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5132141743898a43433bff1cc014eee') in 0.063917 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

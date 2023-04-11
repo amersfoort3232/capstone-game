@@ -830,20 +830,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &39588640
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39588634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.029231116
-  m_Height: 0.13057552
-  m_Direction: 1
-  m_Center: {x: 0.00024982356, y: -0.0011685344, z: 0}
 --- !u!114 &39588641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,8 +880,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.058462232, y: 0.13057552, z: 0.005381243}
-  m_Center: {x: 0.00024982356, y: -0.0011685344, z: 1.6605869e-17}
+  m_Size: {x: 0.020368418, y: 0.13057552, z: 0.005381243}
+  m_Center: {x: -0.0008548893, y: -0.0011685342, z: -6.4050927e-18}
 --- !u!1001 &74817759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2094,6 +2080,19 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 808951036951673268, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
   m_PrefabInstance: {fileID: 1034653283}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &414462528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414462525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19141006, y: 3.0852091, z: 1.6834528}
+  m_Center: {x: -1.1809368, y: 1.5426046, z: -0.00000011920929}
 --- !u!114 &414462529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2106,7 +2105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6043bef0cfb3aa640b9fd39d24596668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: 
+  scenename: Carnival
 --- !u!114 &414462530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2276,7 +2275,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414462525}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f275025bf01e9b42b4be711dc6c37c9, type: 3}
   m_Name: 
@@ -6612,6 +6611,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4993401490378894592, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993401490378894592, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
 --- !u!1 &1135372201
@@ -8885,20 +8892,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1561111826
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561111822}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.025
-  m_Height: 0.15
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1561111827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9070,7 +9063,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01, z: 0.01}
+  m_Size: {x: 0.01, y: 0.125, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1561111832
 MonoBehaviour:
@@ -10049,6 +10042,7 @@ GameObject:
   - component: {fileID: 1679141158}
   - component: {fileID: 1679141159}
   - component: {fileID: 1679141160}
+  - component: {fileID: 1679141161}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Player
@@ -10608,6 +10602,102 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1679141161
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679141151}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!43 &1679793172
 Mesh:
   m_ObjectHideFlags: 0
@@ -10919,7 +11009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u9396\u5319\u5728\u8336\u51E0\u4E0B\u9762"
+  m_text: "\u9396\u5319\u5728\u8336\u51E0\u4E0A\u9762"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e6ef17e0c2886a4f99c1c1688d48c99, type: 2}
   m_sharedMaterial: {fileID: 3229824193862688038, guid: 7e6ef17e0c2886a4f99c1c1688d48c99, type: 2}
